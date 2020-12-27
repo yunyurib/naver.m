@@ -1,5 +1,6 @@
 @charset "utf-8";
-.none {
+label,
+.title_none {
   display: none;
 }
 .blind {
