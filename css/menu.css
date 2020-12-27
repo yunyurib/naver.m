@@ -1,20 +1,18 @@
 @charset "utf-8";
 
-/* 전체 숨김 메뉴 디자인*/
 #mwrap {
   position: fixed;
   top: 0;
   left: -100%;
   width: 100%;
-  min-height: 100%; /*최소높이값*/
+  min-height: 100%;
   padding-bottom: 50px;
-  box-sizing: border-box; /*패딩포함*/
+  box-sizing: border-box;
   background-color: #f3f3f3;
   z-index: 999999;
   overflow-y: auto;
 }
 
-/*탑 바-로그인 정보영역*/
 #topbar {
   position: relative;
   width: 100%;
@@ -27,7 +25,6 @@
   height: 100%;
 }
 .user_name {
-  /*로그인정보 박스*/
   left: 0;
   right: 110px;
   overflow: hidden;
@@ -88,7 +85,6 @@
   background: url(../images/sp_aside_v161116.png) no-repeat -98px -78px/184px;
 }
 
-/*숨김메뉴 리스트*/
 #hmenu {
   position: relative;
   width: 100%;
@@ -143,7 +139,6 @@
   font-size: 14px;
 }
 
-/*마지막 리스트 플러스 아이콘 가상요소*/
 #hmenu li:last-child a::before {
   content: "";
   display: block;
@@ -159,7 +154,6 @@
   display: none;
 }
 
-/*전체 서비스 버튼 그룹 박스*/
 #total {
   position: relative;
   width: 100%;
@@ -169,7 +163,7 @@
   border-top: 1px solid #f5f5f5;
   border-bottom: 1px solid #dfe1e3;
 }
-/*버튼 공통*/
+
 .tbtn {
   background-color: transparent;
   border: none;
@@ -192,7 +186,6 @@
   margin-left: 10px;
 }
 .seq::before {
-  /*순서버튼*/
   content: "";
   display: inline-block;
   width: 12px;
@@ -200,7 +193,7 @@
   background: url(../images/sp_aside_v161116.png) no-repeat -99px -129px/184px;
   margin-right: 4px;
 }
-/*전체서비스 링크버튼*/
+
 a.tot {
   position: absolute;
   display: block;
@@ -219,7 +212,6 @@ a.tot::after {
   margin-left: 5px;
 }
 
-/*네이버 페이 박스*/
 #npay {
   position: relative;
   width: 100%;
@@ -229,7 +221,6 @@ a.tot::after {
   border-bottom: 1px solid #dfe1e3;
 }
 a.nplogo {
-  /*네이버페이로고*/
   display: block;
   width: 137px;
   height: 42px;
@@ -238,7 +229,6 @@ a.nplogo {
 }
 
 a.start {
-  /*시작하기 버튼*/
   position: absolute;
   display: block;
   top: 10px;
@@ -258,7 +248,6 @@ a.start::after {
   margin-left: 2px;
 }
 div.jump {
-  /*네이버페이 이동정보*/
   width: 92%;
   line-height: 39px;
   background-color: #fafafa;
@@ -270,7 +259,7 @@ div.jump {
   color: #828282;
   margin-top: 3px;
 }
-/*네앱연구소 박스*/
+
 #napp {
   position: relative;
   width: 100%;
@@ -299,7 +288,6 @@ div.jump {
   background: url(../images/sp_aside_v161116.png) no-repeat 0px -149px/184px;
 }
 
-/*로그인, 공지사항 버튼*/
 #logbtn {
   position: absolute;
   bottom: 0;
@@ -336,7 +324,6 @@ a.login::before {
 }
 
 a.login::after {
-  /*구분선*/
   content: "";
   display: block;
   position: absolute;

@@ -1,5 +1,7 @@
 @charset "utf-8";
-/* Main 페이지 CSS*/
+.none {
+  display: none;
+}
 .blind {
   display: none;
 }
@@ -17,7 +19,6 @@
   margin: 0 auto;
 }
 
-/*햄버거 버튼*/
 #ham {
   position: absolute;
   top: 0px;
@@ -61,7 +62,6 @@
     558px;
 }
 
-/*********검색박스**********/
 #sbox {
   position: absolute;
   left: 14px;
@@ -120,7 +120,6 @@
   display: block;
 }
 
-/*********  2. 카테고리 네비게이션 영역 ***********/
 #navibar {
   position: relative;
   width: 100%;
@@ -154,7 +153,6 @@
   border-bottom: 2px solid #16b634;
 }
 
-/*네비게이션 바로열기 버튼*/
 #navibar > button {
   position: absolute;
   top: 0px;
@@ -170,7 +168,6 @@
 #navibar > button > span {
   display: none;
 }
-/*바로가기버튼 화살표*/
 #navibar > button::after {
   content: "";
   display: block;
@@ -193,7 +190,6 @@
   background: linear-gradient(to right, rgba(255, 255, 255, 0), #fff);
 }
 
-/**************주요뉴스***************/
 #mnews {
   position: relative;
   width: 100%;
@@ -217,7 +213,7 @@
   overflow: hidden;
   line-height: 19px;
 }
-/*뉴스라인 별도처리*/
+
 #mnews a span {
   position: absolute;
   right: 15px;
@@ -239,7 +235,6 @@
   width: 70%;
 }
 
-/************ 실시간급상승어 ***********/
 #rtk {
   position: relative;
   width: 100%;
@@ -262,7 +257,6 @@
   background-color: #81a9db;
 }
 
-/*실검 리스트*/
 #Rlist {
   position: absolute;
   top: 0px;
@@ -311,7 +305,6 @@
   background-position: -478px -505px !important;
 }
 
-/**************실시간 숨김리스트***************/
 #hidelist {
   position: relative;
   width: 100%;
@@ -387,7 +380,6 @@
   text-align: center;
 }
 
-/********* 사진뉴스 **********/
 #pnews {
   position: relative;
   width: 100%;
@@ -487,7 +479,6 @@
   border: none;
 }
 
-/*********** 바로가기 메뉴박스 ************/
 #dmenu {
   position: relative;
   width: 100%;
@@ -528,7 +519,6 @@
   background-color: #f2f2f2;
 }
 
-/**********  광고박스 ************/
 #adbox {
   position: relative;
   width: 100%;
@@ -609,7 +599,7 @@
   text-indent: 10px;
   white-space: nowrap;
 }
-/*버튼 플러스 이미지*/
+
 #addpan > button::before {
   content: "";
   position: absolute;
@@ -620,7 +610,6 @@
   background: url(../images/sp_main.png) no-repeat -65px -487px/519px;
 }
 
-/************** 페이징박스 ******************/
 #paging {
   position: relative;
   width: 100%;
@@ -634,7 +623,7 @@
   width: 70px;
   height: 34px;
 }
-/*버튼 class*/
+
 .gbtn {
   position: absolute;
   width: 35px;
@@ -699,7 +688,6 @@
   color: #555;
 }
 
-/*위로가기버튼*/
 #paging > div:last-child {
   position: absolute;
   top: 0px;
@@ -719,7 +707,7 @@
   height: 18px;
   background: url(../images/sprmt2.png) no-repeat -185px -40px/250px;
 }
-/*********************  회사정보 **********************/
+
 #info {
   position: relative;
   width: 100%;
@@ -728,12 +716,11 @@
   border-top: 1px solid #e1e1e1;
   text-align: center;
 }
-/*공통 p요소 디자인*/
+
 #info > p {
   line-height: 18px;
   font-size: 12px;
 }
-/*첫줄 a태그 버튼*/
 #info > p:first-child > a {
   position: relative;
   display: inline-block;
@@ -744,11 +731,11 @@
   color: #333;
   border: 1px solid #bdbdbd;
 }
-/*두번째 줄 p태그*/
+
 #info > p:nth-child(2) {
   margin: 8px 0 5px;
 }
-/*두번째 줄 a태그 링크*/
+
 #info > p:nth-child(2) > a {
   position: relative;
   display: inline-block;
@@ -764,7 +751,6 @@
   vertical-align: -2px;
 }
 
-/*세번째 줄 a태그 링크*/
 #info > p:last-child > a {
   position: relative;
   display: inline-block;
