@@ -1,7 +1,7 @@
 let listNum = 0;
 function goRTK() {
   "use strict";
-  let tg = document.getElementById("Rlist");
+  const tg = document.getElementById("Rlist");
   listNum++;
   if (listNum === 20) {
     listNum = 0;
@@ -13,7 +13,7 @@ window.addEventListener("load", function () {
   "use strict";
   setInterval(goRTK, 2000);
 
-  let menu = document.getElementById("mwrap");
+  const menu = document.getElementById("mwrap");
   document.getElementById("ham").onclick = function () {
     menu.style.left = "0%";
     menu.style.transition = "left .6s ease-out";
@@ -27,7 +27,7 @@ window.addEventListener("load", function () {
   document.querySelector(".rtk_toggle").onclick = function () {
     hlsts ? (hlsts = "0px") : (hlsts = "450px");
 
-    let tglist = document.querySelector("#hidelist");
+    const tglist = document.querySelector("#hidelist");
     tglist.style.transition = "height .6s ease-in-out";
     tglist.style.height = hlsts;
 
