@@ -1,0 +1,772 @@
+@charset "utf-8";
+/* Main 페이지 CSS*/
+.blind {
+  display: none;
+}
+#top {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  background-color: #00c73c;
+  border-bottom: 1px solid #31b829;
+  box-sizing: border-box;
+}
+#logo {
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+}
+
+/*햄버거 버튼*/
+#ham {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 50px;
+  height: 45px;
+}
+#ham > span {
+  display: none;
+}
+#ham::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 16px;
+  left: 14px;
+  width: 22px;
+  height: 17px;
+  background: url(../images/sp_main_v170707.png) no-repeat -26px -508px/569px
+    558px;
+}
+#setting {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 50px;
+  height: 45px;
+}
+#setting > span {
+  display: none;
+}
+#setting::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 25px;
+  height: 21px;
+  top: 13px;
+  right: 15px;
+  background: url(../images/sp_main_v170707.png) no-repeat -485px -354px/569px
+    558px;
+}
+
+/*********검색박스**********/
+#sbox {
+  position: absolute;
+  left: 14px;
+  right: 14px;
+  height: 40px;
+  background-color: #fff;
+  margin: 0 auto;
+  border: 1px solid #05d063;
+}
+#search {
+  width: 100%;
+  height: 27px;
+  padding: 9px 25px 0px 10px;
+  font-size: 17px;
+  line-height: 27px;
+  border: none;
+}
+#search:focus {
+  outline: none;
+}
+#sbox button {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border: none;
+}
+#sbox button::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 40px;
+  height: 40px;
+  background: url(../images/sprmt2.png) no-repeat -165px -118px/250px auto;
+}
+#sbox button::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 40px;
+  height: 40px;
+  background: url(../images/sprmt2.png) no-repeat -148px -75px/250px auto;
+  display: none;
+}
+#sbox button span {
+  display: none;
+}
+#search:focus + button::after {
+  display: none;
+}
+#search:focus + button::before {
+  display: block;
+}
+
+/*********  2. 카테고리 네비게이션 영역 ***********/
+#navibar {
+  position: relative;
+  width: 100%;
+  height: 43px;
+  overflow: hidden;
+  background-color: #fff;
+}
+#navibar > ul {
+  padding: 0 14px;
+  height: 42px;
+  width: 473px;
+  white-space: nowrap;
+  border-bottom: 1px solid #e5e5e5;
+}
+#navibar > ul > li {
+  padding: 0 2px;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 44px;
+  text-align: center;
+}
+#navibar > ul > li > a {
+  display: block;
+  padding: 0 5px;
+  height: 41px;
+  color: #333;
+  text-decoration: none;
+}
+.selmenu > a {
+  color: #16b634 !important;
+  border-bottom: 2px solid #16b634;
+}
+
+/*네비게이션 바로열기 버튼*/
+#navibar > button {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 41px;
+  height: 43px;
+  background-color: #fff;
+  border: none;
+  border-left: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  box-sizing: border-box;
+}
+#navibar > button > span {
+  display: none;
+}
+/*바로가기버튼 화살표*/
+#navibar > button::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 16px;
+  left: 12px;
+  width: 16px;
+  height: 10px;
+  background: url(../images/sp_main_v170707.png) no-repeat -122px -507px/569px
+    auto;
+}
+#navibar > button::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: -27px;
+  width: 26px;
+  height: 40px;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), #fff);
+}
+
+/**************주요뉴스***************/
+#mnews {
+  position: relative;
+  width: 100%;
+  height: 205px;
+  background-color: #fff;
+  margin-top: 10px;
+}
+#mnews ul li {
+  width: 92%;
+  border-bottom: 1px solid #f2f2f2;
+  margin: 0 4%;
+}
+#mnews a {
+  display: block;
+  padding: 10px 15px 11px;
+  text-indent: -13px;
+  font-size: 14px !important;
+  letter-spacing: -1px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  line-height: 19px;
+}
+/*뉴스라인 별도처리*/
+#mnews a span {
+  position: absolute;
+  right: 15px;
+  display: inline-block;
+  text-indent: 0px;
+}
+
+#mnews a span::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: -10px;
+  width: 1px;
+  height: 100%;
+  background-color: #e5e5e5;
+}
+.scon a {
+  width: 70%;
+}
+
+/************ 실시간급상승어 ***********/
+#rtk {
+  position: relative;
+  width: 100%;
+  height: 41px;
+  background-color: #fff;
+  overflow: hidden;
+}
+#rtk > h3 {
+  position: absolute;
+  top: 9px;
+  left: 14px;
+  width: 76px;
+  height: 21px;
+  box-sizing: border-box;
+  font-size: 12px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  line-height: 21px;
+  background-color: #81a9db;
+}
+
+/*실검 리스트*/
+#Rlist {
+  position: absolute;
+  top: 0px;
+  left: 100px;
+  right: 40px;
+  height: 40px;
+}
+#Rlist > li {
+  float: none;
+}
+#Rlist > li > a {
+  display: block;
+  line-height: 40px;
+  margin-right: 90px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+#Rlist > li > a > span:first-child {
+  font-style: italic;
+}
+#Rlist > li > a > span:last-child {
+  padding-left: 5px;
+}
+
+#rtk .rtk_toggle {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  width: 30px;
+  height: 40px;
+}
+#rtk .rtk_toggle::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 16px;
+  left: 7px;
+  width: 18px;
+  height: 9px;
+  background: url(../images/sp_main_v170719.png) no-repeat -459px -400px/557px
+    549px;
+}
+
+.toggle2::before {
+  background-position: -478px -505px !important;
+}
+
+/**************실시간 숨김리스트***************/
+#hidelist {
+  position: relative;
+  width: 100%;
+  height: 0px;
+  overflow: hidden;
+  background-color: #fff;
+}
+#hidelist > div {
+  position: absolute;
+  width: 100%;
+  background-color: #fff;
+}
+#hidelist > div.rtkbox {
+  position: relative;
+  width: 100%;
+  height: 41px;
+  background-color: #ededed;
+}
+#hidelist > div.rtkbox > a {
+  display: block;
+  width: 50%;
+  height: 100%;
+  line-height: 41px;
+  text-align: center;
+  float: left;
+}
+.nowsel {
+  color: #fff;
+  background-color: #15c937;
+  padding: 5px;
+}
+.rtk2 {
+  display: none;
+}
+
+#hidelist > div > ol {
+  position: relative;
+  width: 92%;
+  margin: 0 auto;
+}
+#hidelist > div > ol > li {
+  position: relative;
+  width: 100%;
+  height: 38px;
+  line-height: 38px;
+  border-bottom: 1px solid #f5f5f5;
+}
+#hidelist > div > ol > li > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+#hidelist > div > ol > li > a > span {
+  position: absolute;
+  display: block;
+  height: 100%;
+}
+#hidelist > div > ol > li > a > span:first-child {
+  top: 0;
+  left: 0;
+  width: 18px;
+  text-align: center;
+}
+#hidelist > div > ol > li > a > span:nth-child(2) {
+  top: 0;
+  left: 18px;
+  right: 45px;
+}
+#hidelist > div > ol > li > a > span:last-child {
+  top: 0;
+  right: 0;
+  width: 45px;
+  text-align: center;
+}
+
+/********* 사진뉴스 **********/
+#pnews {
+  position: relative;
+  width: 100%;
+  background-color: #fff;
+  margin-top: 10px;
+  padding: 2%;
+  box-sizing: border-box;
+}
+#pnews::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#pnews > figure {
+  float: left;
+  width: 50%;
+  padding: 1.5%;
+  box-sizing: border-box;
+}
+#pnews > figure img {
+  width: 100%;
+}
+#pnews > figure > figcaption a {
+  font-size: 13px;
+  padding: 2%;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  height: 35px;
+}
+
+#weather {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  background-color: #fff;
+  margin-top: 10px;
+  overflow: hidden;
+}
+#weather > div:first-child {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  width: auto;
+  height: 50px;
+}
+#weather > div:first-child > span:first-child {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: url(../images/sp_weather_v160628.png) no-repeat 0px 0px/50px;
+}
+#weather > div:first-child > span:last-child {
+  position: relative;
+  top: -12px;
+  display: inline-block;
+  height: 50px;
+  font-size: 38px;
+  line-height: 40px;
+  color: #555;
+}
+#weather > div:first-child > span:last-child::after {
+  content: "℃";
+  position: relative;
+  left: -10px;
+  font-size: 15px;
+  vertical-align: 15px;
+}
+#weather > div:nth-child(2) {
+  position: absolute;
+  left: 140px;
+  box-sizing: border-box;
+  padding-top: 12px;
+}
+#weather > div:nth-child(2) > span {
+  display: block;
+  font-size: 14px;
+}
+#weather > div:last-child {
+  position: absolute;
+  right: 7px;
+  top: 0px;
+  width: 34px;
+  height: 60px;
+}
+#weather > div:last-child > button {
+  position: relative;
+  top: 15px;
+  left: 2px;
+  width: 30px;
+  height: 30px;
+  background: #fff url(../images/sp_main.png) no-repeat -35px -360px/519px 516px;
+  border: none;
+}
+
+/*********** 바로가기 메뉴박스 ************/
+#dmenu {
+  position: relative;
+  width: 100%;
+  height: 76px;
+  background-color: #fff;
+  margin-top: 10px;
+  overflow: hidden;
+}
+#dmenu li {
+  position: relative;
+  width: 33.333%;
+  text-align: center;
+  line-height: 38px;
+  font-size: 14px;
+}
+#dmenu a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #666;
+}
+#dmenu li::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: -1px;
+  width: 1px;
+  height: 100%;
+  background-color: #f2f2f2;
+}
+#dmenu li::after {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: 0px;
+  width: 100%;
+  height: 1px;
+  background-color: #f2f2f2;
+}
+
+/**********  광고박스 ************/
+#adbox {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  background: url(../images/adgong_bg.jpg) repeat-x;
+  text-align: center;
+  margin-top: 10px;
+}
+#adbox img {
+  width: 320px;
+  height: 100px;
+}
+#banner1 {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  background-color: #fff;
+  text-align: center;
+  margin-top: 10px;
+}
+#banner1 img {
+  width: 320px;
+  height: 60px;
+}
+#addpan {
+  position: relative;
+  width: 100%;
+  height: 65px;
+  background-color: #fff;
+  margin-top: 10px;
+}
+#addpan > div {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 100%;
+  height: 45px;
+}
+#addpan > div::before {
+  content: "";
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  background: url(../images/sp_main.png) no-repeat -338px -224px/519px;
+}
+#addpan > div > span {
+  position: absolute;
+  top: 0px;
+  left: 45px;
+  width: 100%;
+  height: 100%;
+  display: block;
+  font-size: 13px;
+  line-height: 16px;
+  color: #888;
+  white-space: nowrap;
+  box-sizing: border-box;
+  padding-top: 5px;
+  padding-left: 10px;
+}
+#addpan > div > span > em {
+  font-style: normal;
+  font-size: 16px;
+  color: #222;
+  line-height: 19px;
+  padding-bottom: 3px;
+}
+#addpan > button {
+  position: absolute;
+  top: 17px;
+  right: 15px;
+  width: 62px;
+  height: 30px;
+  background-color: #fff;
+  border: 1px solid #00c73c;
+  color: #00c73c;
+  font-size: 14px;
+  text-indent: 10px;
+  white-space: nowrap;
+}
+/*버튼 플러스 이미지*/
+#addpan > button::before {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 9px;
+  width: 11px;
+  height: 11px;
+  background: url(../images/sp_main.png) no-repeat -65px -487px/519px;
+}
+
+/************** 페이징박스 ******************/
+#paging {
+  position: relative;
+  width: 100%;
+  height: 46px;
+  margin-top: 10px;
+}
+#paging > div:first-child {
+  position: absolute;
+  top: 0px;
+  left: 10px;
+  width: 70px;
+  height: 34px;
+}
+/*버튼 class*/
+.gbtn {
+  position: absolute;
+  width: 35px;
+  height: 34px;
+  border: 1px solid #e1e1e1;
+  font-size: 11px;
+  color: #9f9f9f;
+  background-color: #f9f9f9;
+  white-space: nowrap;
+  text-align: center;
+}
+.gbtn2 {
+  right: 0px;
+  color: #6a6a6a;
+  font-size: 15px;
+}
+
+#paging > div:nth-child(2) {
+  position: absolute;
+  top: 0px;
+  left: 80px;
+  right: 80px;
+  height: 34px;
+  text-align: center;
+}
+#paging > div:nth-child(2) > a {
+  position: relative;
+  display: inline-block;
+  width: 37px;
+  height: 34px;
+  line-height: 34px;
+  background-color: #f9f9f9;
+  box-sizing: border-box;
+  border: 1px solid #e1e1e1;
+}
+#paging > div:nth-child(2) > a::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 12px;
+  width: 9px;
+  height: 15px;
+  background: url(../images/sprmt2.png) no-repeat -205px -30px/250px;
+}
+#paging > div:nth-child(2) > a:last-of-type::after {
+  background-position: -220px -30px;
+  left: 14px;
+}
+
+#paging > div:nth-child(2) > span {
+  position: relative;
+  vertical-align: top;
+  display: inline-block;
+  width: 40px;
+  height: 34px;
+  line-height: 34px;
+  color: #989ea0;
+  font-size: 16px;
+}
+.inum {
+  font-style: normal;
+  color: #555;
+}
+
+/*위로가기버튼*/
+#paging > div:last-child {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  width: 40px;
+  height: 34px;
+  border: 1px solid #e1e1e1;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+}
+#paging > div:last-child::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 11px;
+  width: 16px;
+  height: 18px;
+  background: url(../images/sprmt2.png) no-repeat -185px -40px/250px;
+}
+/*********************  회사정보 **********************/
+#info {
+  position: relative;
+  width: 100%;
+  height: 76px;
+  padding: 15px 0px 22px;
+  border-top: 1px solid #e1e1e1;
+  text-align: center;
+}
+/*공통 p요소 디자인*/
+#info > p {
+  line-height: 18px;
+  font-size: 12px;
+}
+/*첫줄 a태그 버튼*/
+#info > p:first-child > a {
+  position: relative;
+  display: inline-block;
+  line-height: 25px;
+  padding: 0 8px;
+  margin: 0 2px;
+  background-color: #f9f9f9;
+  color: #333;
+  border: 1px solid #bdbdbd;
+}
+/*두번째 줄 p태그*/
+#info > p:nth-child(2) {
+  margin: 8px 0 5px;
+}
+/*두번째 줄 a태그 링크*/
+#info > p:nth-child(2) > a {
+  position: relative;
+  display: inline-block;
+  color: #333;
+}
+.spline::before {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 12px;
+  margin: 0 10px 0 7px;
+  background-color: #bdbdbd;
+  vertical-align: -2px;
+}
+
+/*세번째 줄 a태그 링크*/
+#info > p:last-child > a {
+  position: relative;
+  display: inline-block;
+  color: #333;
+}
