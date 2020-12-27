@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>NAVER.M</title>
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+</head>
+<body>
+    <header id="top">
+        <!--로고-->
+        <img id="logo" src="images/naverlogo.png" alt="네이버로고">
+        <!--햄버거버튼-->
+        <a href="#" id="ham"><span>네이버메뉴버튼</span></a>
+        <!--설정버튼-->
+        <a href="#" id="setting"><span>네이버셋팅버튼</span></a>
+        <!--검색박스-->
+        <div id="sbox">
+            <form action="process.php" method="post">
+                <input type="search" id="search" name="search" maxlength="255">
+                <button>
+                    <span>인식검색 펼치기</span>
+                </button>
+            </form>
+        </div>
+    </header>
+    <nav id="navibar">
+        <ul>
+            <li class="selmenu"><a href="#">뉴스</a></li>
+            <li><a href="#">연예</a></li>
+            <li><a href="#">스포츠</a></li>
+            <li><a href="#">웹툰·뿜</a></li>
+            <li><a href="#">차·테크</a></li>
+            <li><a href="#">푸드</a></li>
+            <li><a href="#">쇼핑</a></li>
+            <li><a href="#">동영상</a></li>
+        </ul>
+        <button>
+            <span>바로가기 열기</span>
+        </button>
+    </nav>
+    <section id="mnews">
+        <ul>
+            <li><a href="#">尹 '운명의날' 앞두고 秋 향해 파상공세…檢 내부 비판도 확산"</a></li>
+            <li><a href="#">국회, 25일 만에 법안 처리…추경·정부조직법은 상정 못해</a></li>
+            <li class="scon"><a href="#">박능후 "복지재원 주도적 확대 방안 강구" <span>생중계</span></a></li>
+            <li><a href="#">코스피, 장막판 상승전환…사상 최고치 2,426.04..증시</a></li>
+            <li class="scon"><a href="#">장마 소강, 무더위에 불쾌지수 높아요<span>전국날씨</span></a></li>
+        </ul>
+    </section>
+    <section id="rtk">
+        <h3>실시간급상승</h3>
+        <ol id="Rlist">
+            <li>
+                <a href="#">
+                    <span>1</span>
+                    <span>김병만</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>2</span>
+                    <span>뮤직뱅크</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>3</span>
+                    <span>서유정</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>4</span>
+                    <span>홍준표 장화</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>5</span>
+                    <span>박재범</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>6</span>
+                    <span>린킨 파크</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>7</span>
+                    <span>한국장학재단</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>8</span>
+                    <span>국가장학금</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>9</span>
+                    <span>김정숙여사</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>10</span>
+                    <span>김정숙</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>11</span>
+                    <span>박유천</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>12</span>
+                    <span>커피스미스</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>13</span>
+                    <span>중복</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>14</span>
+                    <span>국회의원 아들 판사</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>15</span>
+                    <span>김정민</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>16</span>
+                    <span>홍준표</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>17</span>
+                    <span>내일날씨</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>18</span>
+                    <span>제이지</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>19</span>
+                    <span>정글의법칙</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>20</span>
+                    <span>품위있는 그녀</span>
+                </a>
+            </li>
+        </ol>
+        <a href="#" class="rtk_toggle"><span class="blind">실시간검색 더보기</span></a>
+    </section>
+    <section id="hidelist">
+        <div class="rtkbox clb">
+            <a href="#"><span class="nowsel">1~10위</span></a>
+            <a href="#"><span>11~20위</span></a>
+        </div>
+        <div class="rtk rtk1"><!--1위~10위-->		
+            <ol>
+                <li>
+                    <a href="#">
+                        <span>1</span>
+                        <span>토레스</span>
+                        <span>
+                            <span></span>
+                            <em>234</em>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>2</span>
+                        <span>오연아</span>
+                        <span>
+                            <span></span>
+                            <em>13</em>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>3</span>
+                        <span>삽겹살데이이</span>
+                        <span>
+                            <span></span>
+                            <em>23</em>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>4</span>
+                        <span>서신애</span>
+                        <span>
+                            <span></span>
+                            <em>35</em>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>5</span>
+                        <span>강정호</span>
+                        <span>
+                            <span></span>
+                            <em>134</em>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>6</span>
+                        <span>오버워치신규영웅</span>
+                        <span>
+                            <span></span>
+                            <em>34</em>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>7</span>
+                        <span>인생술집</span>
+                        <span>
+                            <span></span>
+                            <em>134</em>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>8</span>
+                        <span>김종인</span>
+                        <span>
+                            <span></span>
+                            <em>378</em>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>9</span>
+                        <span>사드</span>
+                        <span>
+                            <span></span>
+                            <em>23</em>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>10</span>
+                        <span>썰전</span>
+                        <span>
+                            <span></span>
+                            <em>42</em>
+                        </span>
+                    </a>
+                </li>
+            </ol>
+        </div>
+        <div class="rtk rtk2"><!--11위~20위-->
+            <ol>
+                <li>
+                    <a href="#">
+                        <span>11</span>
+                        <span>썰전</span>
+                        <span>
+                            <span></span>
+                            <em>234</em>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>12</span>
+                        <span>외모지상주의</span>
+                        <span>
+                            <span></span>
+                            <em>13</em>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>13</span>
+                        <span>해피투게더</span>
+                        <span>
+                            <span></span>
+                            <em>23</em>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>14</span>
+                        <span>서신애</span>
+                        <span>
+                            <span></span>
+                            <em>35</em>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>15</span>
+                        <span>강정호</span>
+                        <span>
+                            <span></span>
+                            <em>134</em>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>16</span>
+                        <span>오버워치신규영웅</span>
+                        <span>
+                            <span></span>
+                            <em>34</em>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>17</span>
+                        <span>인생술집</span>
+                        <span>
+                            <span></span>
+                            <em>134</em>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>18</span>
+                        <span>김종인</span>
+                        <span>
+                            <span></span>
+                            <em>378</em>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>19</span>
+                        <span>사드</span>
+                        <span>
+                            <span></span>
+                            <em>23</em>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>20</span>
+                        <span>썰전</span>
+                        <span>
+                            <span></span>
+                            <em>42</em>
+                        </span>
+                    </a>
+                </li>
+            </ol>
+        </div>
+    </section>
+    <section id="pnews">
+        <figure>
+            <a href="#"><img src="images/093318178_1.jpg" alt="사진뉴스"></a>
+            <figcaption><a href="#">문무일 '국민만 바라보겠다' 문무일 '국민만 바라보겠다'</a></figcaption>
+        </figure>
+        <figure>
+            <a href="#"><img src="images/084140762_1.jpg" alt="사진뉴스"></a>
+            <figcaption><a href="#">방치된 4대강 주변 '유령공원' 철거한다 방치된 4대강 주변</a></figcaption>
+        </figure>	
+    </section>
+    <section id="weather">
+        <div>
+            <span></span>
+            <span>
+                28
+            </span>
+        </div>
+        <div>
+            <span>춘천</span>
+            <span>어제보다 1˚ 낮음</span>
+        </div>
+        <div>
+            <button>
+                <span class="blind">현재위치</span>
+            </button>
+        </div>
+    </section>
+    <!-- 바로가기 메뉴 박스 -->
+    <section id="dmenu">
+        <ul>
+            <li><a href="#">정치</a></li>
+            <li><a href="#">경제</a></li>
+            <li><a href="#">사회</a></li>
+            <li><a href="#">생활</a></li>
+            <li><a href="#">세계</a></li>
+            <li><a href="#">IT</a></li>
+        </ul>
+    </section>
+    <!-- 광고박스 -->
+    <section id="adbox">
+        <a href="#"><img src="images/adgong.png" alt="광고배너"></a>
+    </section>
+    
+    <!--네이버 바로가기-->
+    <section id="banner1">
+        <a href="#"><img src="images/ban3.png" alt="네이버과학바로가기"></a>
+    </section>
+    
+    <!--판추가 버튼-->
+    <section id="addpan">
+        <div><!--타이틀-->
+            <span>
+                <em>판 추가</em><br>
+                네이버 홈에서 더 많은 판 보기
+            </span>
+        </div>
+        <button>추가</button>
+    </section>
+    
+    <!-- 페이징박스 -->
+    <section id="paging">
+        <div><!--글씨축소확대버튼-->
+            <button class="gbtn gbtn1">가-
+                <span class="blind">글씨작게</span>
+            </button>
+            <button class="gbtn gbtn2">가+
+                <span class="blind">글씨크게</span>
+            </button>
+        </div>
+        <div><!--페이징-->
+            <a href="#"><span class="blind">이전버튼</span></a>
+            <span><em class="inum">1</em> / 8</span>
+            <a href="#"><span class="blind">다음버튼</span></a>
+        </div>
+        <div><!--위로가기 버튼-->
+            <a href="#"><span class="blind">위로가기</span></a>
+        </div>
+    </section>
+    
+    <!-- 회사정보 박스 -->
+    <footer id="info">
+        <p>
+            <a href="#">로그인</a>
+            <a href="#">내 정보관리</a>
+            <a href="#">라이트홈</a>
+            <a href="#">PC버전</a>
+        </p>
+        <p>
+            <a href="#">이용약관</a>
+            <a href="#" class="spline">
+                <strong>개인정보처리방침</strong>
+            </a>
+            <a href="#" class="spline">검색마케팅</a>
+        </p>
+        <p>
+            <a href="#">ⓒ NAVER Corp.</a>
+            <a href="#" class="spline">네이버 고객센터</a>
+        </p>
+    </footer>
+    
+    
+    <!--  /////////////////전체숨김 메뉴 //////////////////// -->
+    <section id="mwrap">
+        <header id="topbar">
+            <a href="#" class="user_name">
+                <span>로그인이 필요합니다.</span>
+            </a>
+            <a href="#" class="alert">
+                <span>알림</span>
+            </a>
+            <a href="#" class="close">
+                <span>닫기</span>
+            </a>
+        </header>
+        <nav id="hmenu"><!--숨김메뉴 리스트-->
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="images/m01.png">
+                        <span>메일</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/m02.png">
+                        <span>쪽지</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/m03.png">
+                        <span>북마크</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/m04.png">
+                        <span>톡톡</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/m05.png">
+                        <span>카페</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/m06.png">
+                        <span>블로그</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/m07.png">
+                        <span>지식iN</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/m08.png">
+                        <span>구독</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/m09.png">
+                        <span>네이버쇼핑</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/m10.png">
+                        <span>웹툰</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/m11.png">
+                        <span>네앱연구소</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>전체서비스</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div id="total"><!--전체서비스-->
+            <button class="init tbtn">초기화</button>
+            <button class="seq tbtn">순서</button>
+            <a href="#" class="tot">전체서비스</a>
+        </div>
+        <div id="npay"><!--네이버페이-->
+            <a href="#" class="nplogo">
+                <span class="blind">네이버페이 바로가기</span>
+            </a>
+            <a href="#" class="start">
+                시작하기
+            </a>
+            <div class="jump">
+                편리하고 안전한 네이버페이
+            </div>
+        </div>
+        <div id="napp">
+            <a href="#">
+                <img src="images/mobile_161819751300.png" alt="네앱연구소">
+            </a>
+        </div>
+        
+        <div id="logbtn"><!--로그인버튼-->
+            <ul>
+                <li>
+                    <a href="#" class="login">로그인</a>
+                </li>
+                <li>
+                    <a href="#" class="noti">공지사항</a>
+                </li>
+            </ul>
+        </div>
+    </section><!--숨김메뉴영역-->
+    <script src="js/main.js" type="text/javascript"></script>
+</head>  
+</body>
+</html>
