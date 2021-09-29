@@ -13,7 +13,7 @@
 
 ## Links
 
-- Link : [**View**](https://xururuca9797.github.io/naver.m)
+- Link : [**View**](https://yunyurib.github.io/naver.m)
 
 
 <p>
